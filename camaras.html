@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cámaras | Luz Verde</title>
+    <link rel="stylesheet" href="css/camaras.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoreo de Cámaras</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Registro de Vehículos Detectados</h2>
+            <form id="registro-vehiculo">
+                <input type="text" id="placa" placeholder="Número de Placa" required>
+                <input type="text" id="modelo" placeholder="Modelo del Vehículo" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Vehículos Registrados</h2>
+            <ul id="lista-vehiculos"></ul>
+        </section>
+    </main>
+    <button id="back-button">Volver al Inicio</button>
+    <script src="js/camaras.js"></script>
+</body>
+</html>

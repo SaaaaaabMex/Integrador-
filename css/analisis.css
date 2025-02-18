@@ -1,0 +1,73 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1abc9c;
+    padding: 1.25rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+/* Contenido principal */
+main {
+    padding: 1.25rem;
+}
+
+/* Gráfico de contaminación */
+#pollution-chart {
+    margin: 1.25rem auto 2rem;
+    max-width: 90%;
+    background: white;
+    border-radius: 8px;
+    padding: 0.625rem;
+    color: #333;
+}
+
+/* Botón de redirección */
+#back-button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 0.75rem 1.875rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 300px;
+    margin: 1.25rem auto;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Efecto hover en el botón de redirección */
+#back-button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 0.9375rem;
+    }
+    main {
+        padding: 0.9375rem;
+    }
+    #back-button {
+        width: 90%;
+        font-size: 1rem;
+    }
+}

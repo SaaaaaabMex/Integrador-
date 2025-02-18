@@ -1,0 +1,108 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1abc9c;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+/* Contenido principal */
+main {
+    padding: 2.5rem 1.25rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.25rem;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #1abc9c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Lista del equipo */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.625rem 0;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(26, 188, 156, 0.2);
+    border-radius: 8px;
+    color: #ecf0f1;
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* Botón de regreso */
+button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    margin-top: 1.875rem;
+    outline: none;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        width: 90%;
+        padding: 1rem;
+    }
+}

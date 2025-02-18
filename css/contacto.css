@@ -1,0 +1,191 @@
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #2c3e50, #4ca1af);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    background-color: #1abc9c;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #16a085; /* Línea inferior para un toque moderno */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* Formulario */
+form {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Menor separación entre los elementos */
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-bottom: 40px; /* Espacio adicional entre el formulario y el botón */
+}
+
+/* Estilo para los campos de entrada y área de texto */
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #1abc9c;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(26, 188, 156, 0.8);
+    border-color: #16a085;
+    background-color: #e0f7fa; /* Fondo suave cuando el campo está enfocado */
+}
+
+/* Botón */
+button {
+    padding: 12px 10px; /* Menos padding para un botón más pequeño */
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 50px; /* Forma redondeada */
+    font-size: 1.1rem; /* Tamaño de fuente ajustado */
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Ajusta el ancho al contenido */
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    position: relative; /* Para el efecto de sombra */
+    overflow: hidden; /* Para el efecto de sombra */
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0; /* Detrás del texto */
+}
+
+button:hover::before {
+    transform: scale(1); /* Efecto de expansión en hover */
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Información de contacto */
+.contact-info {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact-info a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #16a085;
+}
+
+/* Responsive: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size:  2.8rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 30px;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, textarea {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 12px 25px; /* Ajuste adicional en el padding */
+        font-size: 1rem;
+    }
+}
+
+/* Animación de Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

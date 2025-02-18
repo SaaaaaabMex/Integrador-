@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin-bottom: 20px; /* Espacio entre el encabezado y el formulario */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #1abc9c;
+    text-transform: uppercase;
+}
+
+/* Contenedor del formulario */
+#form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para los inputs y select */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #1abc9c;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Foco en los inputs y select */
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #16a085;
+    box-shadow: 0 0 5px #1abc9c;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #1abc9c; /* Fondo verde-azul */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #16a085; /* Fondo más oscuro */
+    transform: scale(1.05); /* Efecto agrandado */
+}
+
+/* Estilo para el estado de la configuración */
+#config-status {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#config-status p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#status {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Estilo del botón de redirección */
+#back-button {
+    background-color: #1abc9c; /* Fondo verde-azul */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Efecto hover en el botón de redirección */
+#back-button:hover {
+    background-color: #16a085; /* Fondo más oscuro */
+    transform: scale(1.05); /* Efecto agrandado */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, select {
+        font-size: 1rem;
+    }
+}
